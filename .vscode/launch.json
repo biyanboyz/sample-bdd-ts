@@ -1,0 +1,45 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": [
+                "${workspaceRoot}/node_modules/**/*.js",
+                "/<node_internals>/**"
+            ],
+            // "runtimeExecutable": "npx",
+            // "runtimeArgs": [
+            //     "ts-node"
+            // ],
+            // "program": "./src/index.ts",
+
+            // "program": "node --enable-source-maps out.webpack/src/__tests__/bdd/harness/main/implmnts/main/main.js",
+
+            "runtimeArgs": [
+                "--enable-source-maps"
+            ],
+            // "program": "src/__tests__/main.ts",
+            "program": "out.webpack/src/__tests__/main.js",
+
+            "preLaunchTask": "Webpack",
+
+            // "runtimeExecutable": "bash",
+            // "runtimeArgs": [
+            //     "-c", "npx webpack --mode development && node --enable-source-maps out.webpack/src/__tests__/bdd/harness/main/implmnts/main/main.js"
+            // ],
+
+			// "env": {
+			// 	"TS_NODE_IGNORE": "false"
+			// },
+
+            "cwd": "${workspaceRoot}",
+            "console": "integratedTerminal",
+            "sourceMaps": true
+        }
+    ]
+}

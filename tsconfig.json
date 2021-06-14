@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "rootDir": ".",
+    "baseUrl": ".",
+    "paths": {
+      "@local/app/*": ["./src/*"]
+    },
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "noErrorTruncation": true
+  }
+}
